@@ -3,13 +3,13 @@ var hours = document.getElementById("hours")
 var minutes = document.getElementById("minutes")
 var seconds = document.getElementById("seconds")
 
-var date = new Date("2021-01-01")
-var curDate = new Date()
-var diffDate = (date-curDate) / 1000
-var d = Math.floor(diffDate / (3600*24));
-var h = Math.floor(diffDate % (3600*24) / 3600);
-var m = Math.floor(diffDate % 3600 / 60);
-var s = Math.floor(diffDate % 60);
+const date = new Date("01 Jan 2021")
+const curDate = new Date()
+const totalSeconds = (date-curDate) / 1000
+var d = Math.floor(totalSeconds / (3600*24));
+var h = Math.floor((totalSeconds / 3600) % 24);
+var m = Math.floor((totalSeconds / 60) % 60);
+var s = Math.floor(totalSeconds % 60);
 
 s = addZero(s)
 m = addZero(m)
