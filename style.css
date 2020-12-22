@@ -1,15 +1,15 @@
 body{
     margin: 0;
     overflow-x: hidden;
-    display: flex;
-    background-color: aqua;
+    background-image: url("https://images.unsplash.com/photo-1530196606945-81ab3df90d91?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=945&q=80");
+    color: white !important;
 }
 
 :root{
     --caveat : Caveat, cursive;
     --lobster : Lobster, cursive;
     --sniglet : Sniglet, cursive;
-    --handlee : 'Handlee', cursive;
+    --handlee : Handlee, cursive;
 }
 
 /* ------------ Font Family Classes ------------ */
@@ -25,21 +25,16 @@ body{
 }
 /* ------x----- Font Family Classes ------x----- */
 
-/* --------- ads --------- */
-.ads{
-    width: 10%;
-    height: 100vh;
-    background-color: rgb(70, 196, 196);
-}
-/* ----x--- ads ---x---- */
-
 /* -------- Current Event -------- */
+
+.main{
+    display: flex;
+}
 .events{
-    width: 80%;
+    width: 100%;
     margin: auto;
-    padding-top: 10%;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
 }
 .event-title{
     font-family: var(--handlee);
@@ -47,6 +42,7 @@ body{
     font-size: 28px;
     max-width: 60%;
     margin: auto;
+    padding-top: 5%;
 }
 .countdown{
     display: flex;
@@ -76,3 +72,12 @@ body{
 }
 
 /* ------x----- Upcoming Events ------x----- */
+
+@media only screen and (max-width: 278px){
+    .countdown{
+       flex-direction: column; 
+    }
+    .colon{
+        display: none;
+    }
+}

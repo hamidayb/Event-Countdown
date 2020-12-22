@@ -47,5 +47,6 @@ var countdown = setInterval(function(){
     seconds.innerHTML = s
 },1000)
 
-const body = document.getElementById("body")
-console.log(window.getComputedStyle(body))
+var event = document.getElementById("body")
+var pro = window.getComputedStyle(event)
+console.log(pro.getPropertyValue(pro.item(127)))
