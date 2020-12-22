@@ -25,6 +25,14 @@ body{
 }
 /* ------x----- Font Family Classes ------x----- */
 
+/* ------------- Colors ------------- */
+
+.grey{
+    color: rgb(224, 222, 222);
+}
+
+/* -------x----- Colors -----x------- */
+
 /* -------- Current Event -------- */
 
 .main{
@@ -34,7 +42,7 @@ body{
     width: 100%;
     margin: auto;
     text-align: center;
-    height: 90vh;
+    height: 100vh;
 }
 .event-title{
     font-family: var(--handlee);
@@ -66,18 +74,34 @@ body{
 /* ------x------ Current Event -----x------ */
 
 /* ------------ Upcoming Events ------------ */
-
-.upcoming-events{
-    margin-top: 10%;
+.up-events-title{
+    margin-top: 15%;
 }
-
+.upcoming-events{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+.birthday{
+    padding: 20px;
+    margin: 5px;
+    font-size: 18px;
+    font-family: var(--sniglet);
+    border: 1px solid white;
+}
 /* ------x----- Upcoming Events ------x----- */
 
+/* ------------ Media Queries -------------*/
 @media only screen and (max-width: 278px){
     .countdown{
        flex-direction: column; 
     }
     .colon{
         display: none;
+    }
+}
+@media only screen and (max-width: 501px){
+    .upcoming-events{
+        flex-direction: column;
     }
 }
