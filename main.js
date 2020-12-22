@@ -46,3 +46,6 @@ var countdown = setInterval(function(){
     minutes.innerHTML = m
     seconds.innerHTML = s
 },1000)
+
+const body = document.getElementById("body")
+console.log(window.getComputedStyle(body))

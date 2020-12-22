@@ -4,37 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
-
+    
     <!-- Style Sheet -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Sniglet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Handlee&family=Lobster&family=Sniglet&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="current-event">
-        <h1 id="event-title">New Year</h1>
-        <table>
-            <caption>Countdown</caption>
-            <tr id="date">
-                <td id="days">000</td>
-                <td id="hours">00</td>
-                <td class="white">:</td>
-                <td id="minutes">00</td>
-                <td class="white">:</td>
-                <td id="seconds">00</td>
-            </tr>
-            <tr id="date-text">
-                <td>Days</td>
-                <td>Hours</td>
-                <td></td>
-                <td>Minutes</td>
-                <td></td>
-                <td>Seconds</td>
-            </tr>
-        </table>
+<body id = "body">
+    <div class="ads"></div>
+    <div class="events">
+        <!-- ............. Current Event ............. -->
+        <div class="event-title">
+            <h1 id="event-title">New Year</h1>
+        </div>
+        <h2 class="sniglet">Countdown</h2>
+        <div class="countdown">
+            <div class="countdown-days">
+                <span id="days" class="size-48px">000</span>
+                <span class="italic-style-text">Days</span>
+            </div>
+            <div class="countdown-days">
+                <span id="hours" class="size-48px">00</span>
+                <span class="italic-style-text">Hours</span>
+            </div>
+                <span class="size-48px">:</span>
+            <div class="countdown-days">
+                <span id="minutes" class="size-48px">00</span>
+                <span class="italic-style-text">Minutes</span>
+            </div class="countdown-days">
+                <span class="size-48px">:</span>
+            <div class="countdown-days">
+                <span id="seconds" class="size-48px">00</span>
+                <span class="italic-style-text">Seconds</span>
+            </div>
+        </div>
+        <!-- ............. Current Event ............. -->
+        <!--  ............ Upcoming Events ............. -->
+        <div class="upcoming-events">
+            <h2 class="lobster">Upcoming Events</h2>
+        </div>
+        <!-- ......x...... Upcoming Events ......x...... -->
     </div>
-    <script type="text/javascript" src="/main.js"></script>
+    
+    <div class="ads"></div>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
