@@ -4,7 +4,8 @@ var minutes = document.getElementById("minutes")
 var seconds = document.getElementById("seconds")
 
 const date = new Date("01 Jan 2021")
-const curDate = new Date()
+const curDate = new Date(new Date().toLocaleString())
+console.log(curDate)
 const totalSeconds = (date-curDate) / 1000
 var d = Math.floor(totalSeconds / (3600*24));
 var h = Math.floor((totalSeconds / 3600) % 24);

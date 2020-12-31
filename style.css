@@ -1,10 +1,21 @@
 body{
     margin: 0;
     overflow-x: hidden;
-    background-image: url("https://images.unsplash.com/photo-1530196606945-81ab3df90d91?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=945&q=80");
     color: white !important;
 }
 
+body::after{
+    content: "";
+    background-image: url("/E://Pics//NUST//library.jpg");
+    background: url("https://images.unsplash.com/photo-1530196606945-81ab3df90d91?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=945&q=80");
+    filter: brightness(100%);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
 :root{
     --caveat : Caveat, cursive;
     --lobster : Lobster, cursive;
@@ -74,21 +85,51 @@ body{
 /* ------x------ Current Event -----x------ */
 
 /* ------------ Upcoming Events ------------ */
-.up-events-title{
-    margin-top: 15%;
+.up-events-text{
+    margin-top: 10%;
+    font-family: var(--handlee);
 }
 .upcoming-events{
     margin-top: 3%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .birthday{
-    padding: 20px;
+    min-height: 120px;
+    min-width: 200px;
+    max-width: 250px;
+    max-height: 120px;
     margin: 5px;
     font-size: 18px;
     font-family: var(--sniglet);
     border: 1px solid white;
+    background-color: rgb(172, 172, 172);
+    position: relative;
 }
+.up-event-title{
+    font-family: var(--sniglet);
+    font-size: 22px;
+    padding: 10px;
+    color: black;
+}
+.event-date-div{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    position: absolute;
+    bottom: 0%;
+}
+.event-date{
+    font-size: 16px;
+}
+#next, #prev{
+    color: white;
+    margin: auto 10px;
+    font-size: 32px;
+    opacity: 0.5;
+}
+  
 /* ------x----- Upcoming Events ------x----- */
 
 /* ------------ Media Queries -------------*/
